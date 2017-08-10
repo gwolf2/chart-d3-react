@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import BarChart from './Components/BarChart';
 import './App.css';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      data: [100, 400, 232, 200, 233, 120, 78, 162, 390, 20]
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <BarChart data={this.state.data} />
       </div>
     );
   }
