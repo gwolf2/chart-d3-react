@@ -6,7 +6,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      data: [100, 400, 232, 200, 233, 120, 78, 162, 390, 20]
+      data: [500, 400, 232, 200, 233, 120, 78, 162, 390, 20, 1, 2, 3, 4, 5]
     }
   }
 
